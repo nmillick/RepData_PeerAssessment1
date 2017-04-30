@@ -33,7 +33,6 @@ meanStep <- mean(stepsByDay$steps)
 medianStep <- median(stepsByDay$steps)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png) 
 
 The `mean` is 1.0766189\times 10^{4} and the `median` is 10765.
 
@@ -53,7 +52,6 @@ plot(stepsByInterval$interval,stepsByInterval$steps, type="l", xlab="Interval", 
 maxInterval <- stepsByInterval[which.max(stepsByInterval$steps),1]
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
 
 The 5-minute interval containing the maximum number of steps is 835.
 
@@ -84,7 +82,6 @@ legend("topright", c("Imputed", "Non-imputed"), col=c("blue", "red"), lwd=10)
 
 ![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
 
 Calculate new mean and median for imputed data. 
 
@@ -131,5 +128,4 @@ xyplot(stepsByInterval2$steps ~ stepsByInterval2$interval | stepsByInterval2$wee
 
 ![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png) 
 There appears to be more activity on weekends than weekdays.
